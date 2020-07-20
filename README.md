@@ -12,15 +12,17 @@ The Corktown CityScope project consists of 3 modules:
 
 The functionality of each module is documented in the respective README files of the repositories. These modules interact with each other through the [city_IO](https://github.com/CityScope/CS_CityIO) API
 
-![CityScope Corktown Screenshot](https://github.com/CityScope/CS_cityscopeJS/blob/master/docs/web_ui.jpg)
 
 To immediately start working with the live version of the tool, go to <https://cityscope.media.mit.edu/CS_cityscopeJS/?cityscope=corktown>. This tool allows open-ended scenario creation, exploration, saving, loading and downloading of results. For each scenario, the backend modules run simulations and compute urban indicators and these results are visualised in the tool. Note that this hosted version may not be maintained indefinitely. Ideally, you should run your own version of the software by following the instructions below. This will also allow you to make local changes to any of the three modules in order to enhance or alter the functionality of the tool. Using pull requests, such changes can also be shared with the parent repositories to enhance other CityScope projects.
+
+![CityScope Corktown Screenshot](https://github.com/CityScope/CS_cityscopeJS/blob/master/docs/web_ui.jpg)
+
 
 # Running CityScope Corktown locally
 
 ## Clone the projects and install dependencies
 
-Run the following commands to clone the 3 modules:
+Follw the instructions below to clone the 3 modules and install their dependencies:
 
 ### Interactive Front-end
 To clone the interactive Front-End module and checkout the right commit, navigate to the directory where you want to store the project and run the following commands:
@@ -73,7 +75,7 @@ After cloning the project and installing the requirements, there are two ways yo
 ## Running static scenarios 
 
 ### Mobility Simulation
-The file CS_Mobility_Service/scripts/corktown_scenarios.py gives an example of how evaluate the mobility simulation on static scenarios. This outputs a csv file containing for each scenario:
+The file CS_Mobility_Service/scripts/corktown_scenarios.py gives an example of how to evaluate the mobility simulation on static scenarios. This outputs a csv file containing for each scenario:
 - values of the mobility indicators
 - modal splits
 
@@ -82,7 +84,7 @@ To run this file, navigate to 'CS_Mobility_Service/scripts' and run:
 python3 corktown_scenarios.py
 
 ```
-See the [README](https://github.com/CityScope/CS_Mobility_Service) file for information on how to update the mobility parameters. The land-use scenarios are read directly from the stored scenraios on cityIO (created using the interactive tool). Any new scenario created using the interactive tool will be evaluated when this file runs. The results for each scenario will be saved as a csv.
+See the [README](https://github.com/CityScope/CS_Mobility_Service) file for information on how to update the mobility parameters. The land-use scenarios are read directly from the stored scenarios on cityIO (created using the interactive tool). Any new scenario created using the interactive tool will be evaluated when this file runs. The results for each scenario will be saved as a csv.
 
 ### Urban Indicators
 To evaluate the rest of the indicators (Innovation Potential, Economic, Sustaiable Buildings and Community Benefits) for the saved land-use scenarios, navigate to the CS_Urban_Indicators folder and run:
