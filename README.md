@@ -39,7 +39,7 @@ To clone the mobility simulation module and checkout the right commit, navigate 
 ```
 > git clone https://github.com/CityScope/CS_Mobility_Service.git
 > cd CS_Mobility_Service
-> git checkout bb4648a
+> git checkout 8c2e64a
 ```
 Ensure that your version of Python is >=3.8. This project depends on some libraries which are listed in the requirements.txt file. It is recommended that you create a clean environment for this project before installing the dependencies. You can install the dependencies one by one using pip3 or by running the following command inside the project folder.
 ```
